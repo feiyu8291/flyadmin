@@ -4,25 +4,23 @@ server:
 spring:
   application:
     name: fly-admin
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
-    username: root
-    password: root
-  redis:
-    host: localhost
-    port: 6379
-    password:
-    database: 0
-    timeout: 3000ms
-    lettuce:
-      pool:
-        max-active: 8
-        max-wait: -1ms
-        max-idle: 8
-        min-idle: 0
+  # 默认使用 dev 配置，方便本地开发
+  profiles:
+    active: dev
+  # 通用 Jackson/FastJson 配置等可以放这里，目前项目较简单，暂无其他通用层配置
+  
+  # Flyway 配置
+  flyway:
+    enabled: true
+    # 迁移脚本位置
+    locations: classpath:db/migration
+    # 如果数据库非空，自动执行基准迁移
+    baseline-on-migrate: true
+    # 基准版本
+    baseline-version: 0
 
-# MyBatis-Plus 配置
+
+# MyBatis-Plus 全局配置
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**/*.xml
   type-aliases-package: com.fly.business.modules.*.model.entity
@@ -30,9 +28,9 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-# JWT 配置
+# JWT 全局配置
 jwt:
-  # JWT 密钥（生产环境请修改为复杂的密钥）
+  # JWT 密钥
   secret: flyAdminSecretKeyForJwtTokenGenerationAndValidation2026
   # Token 过期时间（毫秒），默认 7 天
   expiration: 604800000

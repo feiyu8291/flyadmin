@@ -5,3 +5,865 @@
 2026-02-06 16:34:56.563 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED shutdown complete.
 2026-02-06 16:34:56.565 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closing ...
 2026-02-06 16:34:56.566 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closed
+2026-02-07 18:36:26.252 [main] INFO  com.fly.business.AppRun-Starting AppRun using Java 1.8.0_341 on DESKTOP-8JBG09M with PID 10844 (D:\GitRepository\flyadmin\fly-business\target\classes started by FeiYu in D:\GitRepository\flyadmin)
+2026-02-07 18:36:26.253 [main] DEBUG com.fly.business.AppRun-Running with Spring Boot v2.7.18, Spring v5.3.24
+2026-02-07 18:36:26.254 [main] INFO  com.fly.business.AppRun-No active profile set, falling back to 1 default profile: "default"
+2026-02-07 18:36:26.262 [background-preinit] INFO  org.hibernate.validator.internal.util.Version-HV000001: Hibernate Validator 6.2.5.Final
+2026-02-07 18:36:28.452 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-07 18:36:28.455 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-07 18:36:28.515 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+2026-02-07 18:36:29.931 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2026-02-07 18:36:29.946 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-07 18:36:29.949 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-02-07 18:36:29.949 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-07 18:36:30.221 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-02-07 18:36:30.221 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3850 ms
+2026-02-07 18:36:30.364 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-Init DruidDataSource
+2026-02-07 18:36:30.583 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} inited
+2026-02-07 18:36:30.832 [main] DEBUG com.fly.common.security.JwtAuthenticationFilter-Filter 'jwtAuthenticationFilter' configured for use
+2026-02-07 18:36:31.348 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:36:31.502 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserPost ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:36:32.185 [main] INFO  org.quartz.impl.StdSchedulerFactory-Using default implementation for ThreadExecutor
+2026-02-07 18:36:32.202 [main] INFO  org.quartz.core.SchedulerSignalerImpl-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-07 18:36:32.203 [main] INFO  org.quartz.core.QuartzScheduler-Quartz Scheduler v.2.3.2 created.
+2026-02-07 18:36:32.204 [main] INFO  org.quartz.simpl.RAMJobStore-RAMJobStore initialized.
+2026-02-07 18:36:32.205 [main] INFO  org.quartz.core.QuartzScheduler-Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FlyAdminScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-07 18:36:32.205 [main] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler 'FlyAdminScheduler' initialized from an externally provided properties instance.
+2026-02-07 18:36:32.205 [main] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler version: 2.3.2
+2026-02-07 18:36:32.205 [main] INFO  org.quartz.core.QuartzScheduler-JobFactory set to: com.fly.common.config.QuartzConfig$AutowiringSpringBeanJobFactory@1aed6f0b
+2026-02-07 18:36:32.598 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:32.608 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:32.609 [Druid-ConnectionPool-Create-1035394386] INFO  com.alibaba.druid.pool.DruidAbstractDataSource-{dataSource-1} failContinuous is true
+2026-02-07 18:36:33.120 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:33.631 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:34.141 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:34.651 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:35.160 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:35.676 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:36.185 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:36.694 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:37.204 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:37.714 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:38.225 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:38.736 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:39.244 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:39.755 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:40.266 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:40.776 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:41.285 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:41.794 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:42.305 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:42.813 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:43.322 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:43.830 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:44.336 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:44.846 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:45.351 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:36:45.862 [Druid-ConnectionPool-Create-1035394386] ERROR com.alibaba.druid.pool.DruidDataSource-create connection SQLException, url: jdbc:mysql://localhost:3306/fly_admin?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true, errorCode 1045, state 28000
+java.sql.SQLException: Access denied for user 'root'@'172.18.0.1' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1703)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1801)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2947)
+2026-02-07 18:44:24.226 [main] INFO  com.fly.business.AppRun-Starting AppRun using Java 1.8.0_341 on DESKTOP-8JBG09M with PID 25956 (D:\GitRepository\flyadmin\fly-business\target\classes started by FeiYu in D:\GitRepository\flyadmin)
+2026-02-07 18:44:24.227 [main] DEBUG com.fly.business.AppRun-Running with Spring Boot v2.7.18, Spring v5.3.24
+2026-02-07 18:44:24.228 [main] INFO  com.fly.business.AppRun-No active profile set, falling back to 1 default profile: "default"
+2026-02-07 18:44:24.236 [background-preinit] INFO  org.hibernate.validator.internal.util.Version-HV000001: Hibernate Validator 6.2.5.Final
+2026-02-07 18:44:26.146 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-07 18:44:26.148 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-07 18:44:26.184 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2026-02-07 18:44:27.202 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2026-02-07 18:44:27.212 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-07 18:44:27.214 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-02-07 18:44:27.215 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-07 18:44:27.400 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-02-07 18:44:27.400 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3094 ms
+2026-02-07 18:44:27.530 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-Init DruidDataSource
+2026-02-07 18:44:27.684 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} inited
+2026-02-07 18:44:27.891 [main] DEBUG com.fly.common.security.JwtAuthenticationFilter-Filter 'jwtAuthenticationFilter' configured for use
+2026-02-07 18:44:28.429 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:44:28.556 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserPost ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:44:29.001 [main] INFO  org.quartz.impl.StdSchedulerFactory-Using default implementation for ThreadExecutor
+2026-02-07 18:44:29.020 [main] INFO  org.quartz.core.SchedulerSignalerImpl-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-07 18:44:29.020 [main] INFO  org.quartz.core.QuartzScheduler-Quartz Scheduler v.2.3.2 created.
+2026-02-07 18:44:29.021 [main] INFO  org.quartz.simpl.RAMJobStore-RAMJobStore initialized.
+2026-02-07 18:44:29.022 [main] INFO  org.quartz.core.QuartzScheduler-Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FlyAdminScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-07 18:44:29.022 [main] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler 'FlyAdminScheduler' initialized from an externally provided properties instance.
+2026-02-07 18:44:29.022 [main] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler version: 2.3.2
+2026-02-07 18:44:29.022 [main] INFO  org.quartz.core.QuartzScheduler-JobFactory set to: com.fly.common.config.QuartzConfig$AutowiringSpringBeanJobFactory@52b32b70
+2026-02-07 18:44:29.701 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysRoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:44:29.724 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysRoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:44:30.102 [main] INFO  org.redisson.Version-Redisson 3.17.1
+2026-02-07 18:44:30.848 [redisson-netty-2-14] INFO  o.r.connection.pool.MasterPubSubConnectionPool-1 connections initialized for localhost/127.0.0.1:6379
+2026-02-07 18:44:30.922 [redisson-netty-2-21] INFO  org.redisson.connection.pool.MasterConnectionPool-24 connections initialized for localhost/127.0.0.1:6379
+2026-02-07 18:44:31.523 [main] INFO  o.s.security.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b103db7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b3042ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@3134b261, org.springframework.security.web.header.HeaderWriterFilter@4040ccae, org.springframework.security.web.authentication.logout.LogoutFilter@61d7bb61, com.fly.common.security.JwtAuthenticationFilter@2f04993d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cc74fc4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c697186, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f12d5e0, org.springframework.security.web.session.SessionManagementFilter@511d568f, org.springframework.security.web.access.ExceptionTranslationFilter@3bc6c10f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cfe9594]
+2026-02-07 18:44:32.829 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-07 18:44:32.968 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-02-07 18:44:33.016 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-07 18:44:33.020 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Will start Quartz Scheduler [FlyAdminScheduler] in 2 seconds
+2026-02-07 18:44:33.045 [main] INFO  com.fly.business.AppRun-Started AppRun in 9.638 seconds (JVM running for 11.946)
+2026-02-07 18:44:34.376 [RMI TCP Connection(32)-198.18.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-07 18:44:34.377 [RMI TCP Connection(32)-198.18.0.1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-02-07 18:44:34.383 [RMI TCP Connection(32)-198.18.0.1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 6 ms
+2026-02-07 18:44:35.023 [Quartz Scheduler [FlyAdminScheduler]] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Starting Quartz Scheduler now, after delay of 2 seconds
+2026-02-07 18:44:35.025 [Quartz Scheduler [FlyAdminScheduler]] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED started.
+2026-02-07 18:45:27.397 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED paused.
+2026-02-07 18:45:27.599 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Shutting down Quartz Scheduler
+2026-02-07 18:45:27.599 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED shutting down.
+2026-02-07 18:45:27.599 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED paused.
+2026-02-07 18:45:27.599 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-07 18:45:27.602 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closing ...
+2026-02-07 18:45:27.611 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closed
+2026-02-07 18:45:31.056 [main] INFO  com.fly.business.AppRun-Starting AppRun using Java 1.8.0_341 on DESKTOP-8JBG09M with PID 25620 (D:\GitRepository\flyadmin\fly-business\target\classes started by FeiYu in D:\GitRepository\flyadmin)
+2026-02-07 18:45:31.057 [main] DEBUG com.fly.business.AppRun-Running with Spring Boot v2.7.18, Spring v5.3.24
+2026-02-07 18:45:31.057 [main] INFO  com.fly.business.AppRun-The following 1 profile is active: "dev"
+2026-02-07 18:45:31.059 [background-preinit] INFO  org.hibernate.validator.internal.util.Version-HV000001: Hibernate Validator 6.2.5.Final
+2026-02-07 18:45:32.331 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-07 18:45:32.334 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-07 18:45:32.359 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2026-02-07 18:45:33.161 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2026-02-07 18:45:33.171 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-07 18:45:33.173 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-02-07 18:45:33.173 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-07 18:45:33.376 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-02-07 18:45:33.377 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2269 ms
+2026-02-07 18:45:33.490 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-Init DruidDataSource
+2026-02-07 18:45:33.668 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} inited
+2026-02-07 18:45:33.828 [main] DEBUG com.fly.common.security.JwtAuthenticationFilter-Filter 'jwtAuthenticationFilter' configured for use
+2026-02-07 18:45:34.283 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:45:34.390 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserPost ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:45:34.755 [main] INFO  org.quartz.impl.StdSchedulerFactory-Using default implementation for ThreadExecutor
+2026-02-07 18:45:34.765 [main] INFO  org.quartz.core.SchedulerSignalerImpl-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-07 18:45:34.765 [main] INFO  org.quartz.core.QuartzScheduler-Quartz Scheduler v.2.3.2 created.
+2026-02-07 18:45:34.766 [main] INFO  org.quartz.simpl.RAMJobStore-RAMJobStore initialized.
+2026-02-07 18:45:34.766 [main] INFO  org.quartz.core.QuartzScheduler-Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FlyAdminScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-07 18:45:34.766 [main] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler 'FlyAdminScheduler' initialized from an externally provided properties instance.
+2026-02-07 18:45:34.766 [main] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler version: 2.3.2
+2026-02-07 18:45:34.767 [main] INFO  org.quartz.core.QuartzScheduler-JobFactory set to: com.fly.common.config.QuartzConfig$AutowiringSpringBeanJobFactory@a69f9d
+2026-02-07 18:45:35.308 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysRoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:45:35.329 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysRoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 18:45:35.694 [main] INFO  org.redisson.Version-Redisson 3.17.1
+2026-02-07 18:45:36.444 [redisson-netty-2-14] INFO  o.r.connection.pool.MasterPubSubConnectionPool-1 connections initialized for localhost/127.0.0.1:6379
+2026-02-07 18:45:36.485 [redisson-netty-2-21] INFO  org.redisson.connection.pool.MasterConnectionPool-24 connections initialized for localhost/127.0.0.1:6379
+2026-02-07 18:45:37.133 [main] INFO  o.s.security.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e4ef4c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ca8bd01, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a6b94b6, org.springframework.security.web.header.HeaderWriterFilter@48c3a0ef, org.springframework.security.web.authentication.logout.LogoutFilter@146db8a6, com.fly.common.security.JwtAuthenticationFilter@4ae280da, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a88d194, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6949cead, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b10472e, org.springframework.security.web.session.SessionManagementFilter@2697c156, org.springframework.security.web.access.ExceptionTranslationFilter@180f33b2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31de27c]
+2026-02-07 18:45:38.246 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-07 18:45:38.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-02-07 18:45:38.337 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-07 18:45:38.339 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Will start Quartz Scheduler [FlyAdminScheduler] in 2 seconds
+2026-02-07 18:45:38.359 [main] INFO  com.fly.business.AppRun-Started AppRun in 7.981 seconds (JVM running for 9.318)
+2026-02-07 18:45:39.022 [RMI TCP Connection(27)-198.18.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-07 18:45:39.023 [RMI TCP Connection(27)-198.18.0.1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-02-07 18:45:39.025 [RMI TCP Connection(27)-198.18.0.1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2026-02-07 18:45:40.340 [Quartz Scheduler [FlyAdminScheduler]] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Starting Quartz Scheduler now, after delay of 2 seconds
+2026-02-07 18:45:40.341 [Quartz Scheduler [FlyAdminScheduler]] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED started.
+2026-02-07 20:41:58.164 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED paused.
+2026-02-07 20:41:58.365 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Shutting down Quartz Scheduler
+2026-02-07 20:41:58.365 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED shutting down.
+2026-02-07 20:41:58.365 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED paused.
+2026-02-07 20:41:58.366 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-07 20:41:58.368 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closing ...
+2026-02-07 20:41:58.370 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closed
+2026-02-07 20:42:12.459 [main] INFO  com.fly.business.AppRun-Starting AppRun using Java 1.8.0_341 on DESKTOP-8JBG09M with PID 18460 (D:\GitRepository\flyadmin\fly-business\target\classes started by FeiYu in D:\GitRepository\flyadmin)
+2026-02-07 20:42:12.460 [main] DEBUG com.fly.business.AppRun-Running with Spring Boot v2.7.18, Spring v5.3.24
+2026-02-07 20:42:12.461 [main] INFO  com.fly.business.AppRun-The following 1 profile is active: "dev"
+2026-02-07 20:42:12.465 [background-preinit] INFO  org.hibernate.validator.internal.util.Version-HV000001: Hibernate Validator 6.2.5.Final
+2026-02-07 20:42:13.719 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-07 20:42:13.721 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-07 20:42:13.747 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-02-07 20:42:14.592 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2026-02-07 20:42:14.602 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-07 20:42:14.603 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-02-07 20:42:14.603 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-07 20:42:14.783 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-02-07 20:42:14.784 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2246 ms
+2026-02-07 20:42:14.886 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-Init DruidDataSource
+2026-02-07 20:42:15.013 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} inited
+2026-02-07 20:42:15.214 [main] DEBUG com.fly.common.security.JwtAuthenticationFilter-Filter 'jwtAuthenticationFilter' configured for use
+2026-02-07 20:42:15.724 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 20:42:15.833 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserPost ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 20:42:16.294 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-Flyway Community Edition 8.5.13 by Redgate
+2026-02-07 20:42:16.295 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#8.5.13
+2026-02-07 20:42:16.295 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-
+2026-02-07 20:42:16.498 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysJobController': Unsatisfied dependency expressed through field 'jobService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysQuartzJobService': Unsatisfied dependency expressed through field 'scheduler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+2026-02-07 20:42:16.498 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closing ...
+2026-02-07 20:42:16.499 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closed
+2026-02-07 20:42:16.503 [main] INFO  org.apache.catalina.core.StandardService-Stopping service [Tomcat]
+2026-02-07 20:42:16.521 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-07 20:42:16.559 [main] ERROR org.springframework.boot.SpringApplication-Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysJobController': Unsatisfied dependency expressed through field 'jobService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysQuartzJobService': Unsatisfied dependency expressed through field 'scheduler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.fly.business.AppRun.main(AppRun.java:14)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysQuartzJobService': Unsatisfied dependency expressed through field 'scheduler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 34 common frames omitted
+Caused by: org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+	at org.flywaydb.core.internal.database.DatabaseTypeRegister.getDatabaseTypeForConnection(DatabaseTypeRegister.java:106)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:76)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:147)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:124)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 46 common frames omitted
+2026-02-07 20:45:59.716 [main] INFO  com.fly.business.AppRun-Starting AppRun using Java 1.8.0_341 on DESKTOP-8JBG09M with PID 17688 (D:\GitRepository\flyadmin\fly-business\target\classes started by FeiYu in D:\GitRepository\flyadmin)
+2026-02-07 20:45:59.717 [main] DEBUG com.fly.business.AppRun-Running with Spring Boot v2.7.18, Spring v5.3.24
+2026-02-07 20:45:59.717 [main] INFO  com.fly.business.AppRun-The following 1 profile is active: "dev"
+2026-02-07 20:45:59.719 [background-preinit] INFO  org.hibernate.validator.internal.util.Version-HV000001: Hibernate Validator 6.2.5.Final
+2026-02-07 20:46:01.043 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-07 20:46:01.046 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-07 20:46:01.075 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2026-02-07 20:46:01.812 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2026-02-07 20:46:01.820 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-07 20:46:01.822 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-02-07 20:46:01.822 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-07 20:46:02.022 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-02-07 20:46:02.023 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2263 ms
+2026-02-07 20:46:02.122 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-Init DruidDataSource
+2026-02-07 20:46:02.258 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} inited
+2026-02-07 20:46:02.414 [main] DEBUG com.fly.common.security.JwtAuthenticationFilter-Filter 'jwtAuthenticationFilter' configured for use
+2026-02-07 20:46:02.870 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 20:46:02.969 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserPost ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 20:46:03.648 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-Flyway Community Edition 9.22.3 by Redgate
+2026-02-07 20:46:03.651 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-See release notes here: https://rd.gt/416ObMi
+2026-02-07 20:46:03.651 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-
+2026-02-07 20:46:03.688 [main] INFO  org.flywaydb.core.FlywayExecutor-Database: jdbc:mysql://localhost:3306/fly_admin (MySQL 8.0)
+2026-02-07 20:46:03.756 [main] INFO  o.f.c.i.schemahistory.JdbcTableSchemaHistory-Schema history table `fly_admin`.`flyway_schema_history` does not exist yet
+2026-02-07 20:46:03.762 [main] INFO  org.flywaydb.core.internal.command.DbValidate-Successfully validated 3 migrations (execution time 00:00.040s)
+2026-02-07 20:46:03.803 [main] INFO  o.f.c.i.schemahistory.JdbcTableSchemaHistory-Creating Schema History table `fly_admin`.`flyway_schema_history` with baseline ...
+2026-02-07 20:46:03.939 [main] INFO  org.flywaydb.core.internal.command.DbBaseline-Successfully baselined schema with version: 0
+2026-02-07 20:46:03.972 [main] INFO  org.flywaydb.core.internal.command.DbMigrate-Current version of schema `fly_admin`: 0
+2026-02-07 20:46:04.028 [main] INFO  org.flywaydb.core.internal.command.DbMigrate-Migrating schema `fly_admin` to version "1.0.0 - System Init"
+2026-02-07 20:46:04.105 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Can't create database 'fly_admin'; database exists (SQL State: HY000 - Error Code: 1007)
+2026-02-07 20:46:04.253 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_user_org_role' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:46:04.317 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_org_tree' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:46:04.349 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.tool_s3_storage' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:46:04.630 [main] ERROR org.flywaydb.core.internal.command.DbMigrate-Migration of schema `fly_admin` to version "1.0.0 - System Init" failed! Please restore backups and roll back database and code!
+2026-02-07 20:46:04.673 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysJobController': Unsatisfied dependency expressed through field 'jobService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysQuartzJobService': Unsatisfied dependency expressed through field 'scheduler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V1.0.0__System_Init.sql failed
+----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : Table 'sys_user_role' already exists
+Location   : db/migration/V1.0.0__System_Init.sql (D:\GitRepository\flyadmin\fly-business\target\classes\db\migration\V1.0.0__System_Init.sql)
+Line       : 163
+Statement  : /*==============================================================*/
+/* Table: sys_user_role - 用户和角色关联表                       */
+/*==============================================================*/
+CREATE TABLE sys_user_role
+(
+    user_id BIGINT NOT NULL COMMENT '用户ID',
+    role_id BIGINT NOT NULL COMMENT '角色ID',
+    PRIMARY KEY (user_id, role_id)
+) ENGINE = InnoDB COMMENT ='用户和角色关联表'
+
+2026-02-07 20:46:04.674 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closing ...
+2026-02-07 20:46:04.680 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closed
+2026-02-07 20:46:04.683 [main] INFO  org.apache.catalina.core.StandardService-Stopping service [Tomcat]
+2026-02-07 20:46:04.704 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2026-02-07 20:46:04.740 [main] ERROR org.springframework.boot.SpringApplication-Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysJobController': Unsatisfied dependency expressed through field 'jobService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysQuartzJobService': Unsatisfied dependency expressed through field 'scheduler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V1.0.0__System_Init.sql failed
+----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : Table 'sys_user_role' already exists
+Location   : db/migration/V1.0.0__System_Init.sql (D:\GitRepository\flyadmin\fly-business\target\classes\db\migration\V1.0.0__System_Init.sql)
+Line       : 163
+Statement  : /*==============================================================*/
+/* Table: sys_user_role - 用户和角色关联表                       */
+/*==============================================================*/
+CREATE TABLE sys_user_role
+(
+    user_id BIGINT NOT NULL COMMENT '用户ID',
+    role_id BIGINT NOT NULL COMMENT '角色ID',
+    PRIMARY KEY (user_id, role_id)
+) ENGINE = InnoDB COMMENT ='用户和角色关联表'
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.fly.business.AppRun.main(AppRun.java:14)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysQuartzJobService': Unsatisfied dependency expressed through field 'scheduler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V1.0.0__System_Init.sql failed
+----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : Table 'sys_user_role' already exists
+Location   : db/migration/V1.0.0__System_Init.sql (D:\GitRepository\flyadmin\fly-business\target\classes\db\migration\V1.0.0__System_Init.sql)
+Line       : 163
+Statement  : /*==============================================================*/
+/* Table: sys_user_role - 用户和角色关联表                       */
+/*==============================================================*/
+CREATE TABLE sys_user_role
+(
+    user_id BIGINT NOT NULL COMMENT '用户ID',
+    role_id BIGINT NOT NULL COMMENT '角色ID',
+    PRIMARY KEY (user_id, role_id)
+) ENGINE = InnoDB COMMENT ='用户和角色关联表'
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V1.0.0__System_Init.sql failed
+----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : Table 'sys_user_role' already exists
+Location   : db/migration/V1.0.0__System_Init.sql (D:\GitRepository\flyadmin\fly-business\target\classes\db\migration\V1.0.0__System_Init.sql)
+Line       : 163
+Statement  : /*==============================================================*/
+/* Table: sys_user_role - 用户和角色关联表                       */
+/*==============================================================*/
+CREATE TABLE sys_user_role
+(
+    user_id BIGINT NOT NULL COMMENT '用户ID',
+    role_id BIGINT NOT NULL COMMENT '角色ID',
+    PRIMARY KEY (user_id, role_id)
+) ENGINE = InnoDB COMMENT ='用户和角色关联表'
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 34 common frames omitted
+Caused by: org.flywaydb.core.internal.command.DbMigrate$FlywayMigrateException: Migration V1.0.0__System_Init.sql failed
+----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : Table 'sys_user_role' already exists
+Location   : db/migration/V1.0.0__System_Init.sql (D:\GitRepository\flyadmin\fly-business\target\classes\db\migration\V1.0.0__System_Init.sql)
+Line       : 163
+Statement  : /*==============================================================*/
+/* Table: sys_user_role - 用户和角色关联表                       */
+/*==============================================================*/
+CREATE TABLE sys_user_role
+(
+    user_id BIGINT NOT NULL COMMENT '用户ID',
+    role_id BIGINT NOT NULL COMMENT '角色ID',
+    PRIMARY KEY (user_id, role_id)
+) ENGINE = InnoDB COMMENT ='用户和角色关联表'
+
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:382)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$applyMigrations$1(DbMigrate.java:272)
+	at org.flywaydb.core.internal.jdbc.TransactionalExecutionTemplate.execute(TransactionalExecutionTemplate.java:55)
+	at org.flywaydb.core.internal.command.DbMigrate.applyMigrations(DbMigrate.java:271)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateGroup(DbMigrate.java:244)
+	at org.flywaydb.core.internal.command.DbMigrate.lambda$migrateAll$0(DbMigrate.java:139)
+	at org.flywaydb.database.mysql.MySQLNamedLockTemplate.execute(MySQLNamedLockTemplate.java:58)
+	at org.flywaydb.database.mysql.MySQLConnection.lock(MySQLConnection.java:152)
+	at org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory.lock(JdbcTableSchemaHistory.java:144)
+	at org.flywaydb.core.internal.command.DbMigrate.migrateAll(DbMigrate.java:139)
+	at org.flywaydb.core.internal.command.DbMigrate.migrate(DbMigrate.java:97)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:188)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:213)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:140)
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 46 common frames omitted
+Caused by: org.flywaydb.core.internal.sqlscript.FlywaySqlScriptException: Migration V1.0.0__System_Init.sql failed
+----------------------------------------
+SQL State  : 42S01
+Error Code : 1050
+Message    : Table 'sys_user_role' already exists
+Location   : db/migration/V1.0.0__System_Init.sql (D:\GitRepository\flyadmin\fly-business\target\classes\db\migration\V1.0.0__System_Init.sql)
+Line       : 163
+Statement  : /*==============================================================*/
+/* Table: sys_user_role - 用户和角色关联表                       */
+/*==============================================================*/
+CREATE TABLE sys_user_role
+(
+    user_id BIGINT NOT NULL COMMENT '用户ID',
+    role_id BIGINT NOT NULL COMMENT '角色ID',
+    PRIMARY KEY (user_id, role_id)
+) ENGINE = InnoDB COMMENT ='用户和角色关联表'
+
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.handleException(DefaultSqlScriptExecutor.java:267)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:222)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.execute(DefaultSqlScriptExecutor.java:126)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.executeOnce(SqlMigrationExecutor.java:68)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.lambda$execute$0(SqlMigrationExecutor.java:57)
+	at org.flywaydb.core.internal.database.DefaultExecutionStrategy.execute(DefaultExecutionStrategy.java:27)
+	at org.flywaydb.core.internal.resolver.sql.SqlMigrationExecutor.execute(SqlMigrationExecutor.java:56)
+	at org.flywaydb.core.internal.command.DbMigrate.doMigrateGroup(DbMigrate.java:374)
+	... 62 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'sys_user_role' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:837)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:685)
+	at com.alibaba.druid.pool.DruidPooledStatement.execute(DruidPooledStatement.java:635)
+	at org.flywaydb.core.internal.jdbc.JdbcTemplate.executeStatement(JdbcTemplate.java:201)
+	at org.flywaydb.core.internal.sqlscript.ParsedSqlStatement.execute(ParsedSqlStatement.java:95)
+	at org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor.executeStatement(DefaultSqlScriptExecutor.java:210)
+	... 68 common frames omitted
+2026-02-07 20:47:49.800 [main] INFO  com.fly.business.AppRun-Starting AppRun using Java 1.8.0_341 on DESKTOP-8JBG09M with PID 11688 (D:\GitRepository\flyadmin\fly-business\target\classes started by FeiYu in D:\GitRepository\flyadmin)
+2026-02-07 20:47:49.802 [main] DEBUG com.fly.business.AppRun-Running with Spring Boot v2.7.18, Spring v5.3.24
+2026-02-07 20:47:49.803 [main] INFO  com.fly.business.AppRun-The following 1 profile is active: "dev"
+2026-02-07 20:47:49.803 [background-preinit] INFO  org.hibernate.validator.internal.util.Version-HV000001: Hibernate Validator 6.2.5.Final
+2026-02-07 20:47:51.130 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-07 20:47:51.133 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-07 20:47:51.162 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-02-07 20:47:51.931 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2026-02-07 20:47:51.941 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-07 20:47:51.942 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2026-02-07 20:47:51.943 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-07 20:47:52.127 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2026-02-07 20:47:52.127 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2278 ms
+2026-02-07 20:47:52.247 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure-Init DruidDataSource
+2026-02-07 20:47:52.389 [main] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} inited
+2026-02-07 20:47:52.541 [main] DEBUG com.fly.common.security.JwtAuthenticationFilter-Filter 'jwtAuthenticationFilter' configured for use
+2026-02-07 20:47:53.012 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserRole ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 20:47:53.114 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysUserPost ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 20:47:53.768 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-Flyway Community Edition 9.22.3 by Redgate
+2026-02-07 20:47:53.771 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-See release notes here: https://rd.gt/416ObMi
+2026-02-07 20:47:53.771 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter-
+2026-02-07 20:47:53.796 [main] INFO  org.flywaydb.core.FlywayExecutor-Database: jdbc:mysql://localhost:3306/fly_admin (MySQL 8.0)
+2026-02-07 20:47:53.870 [main] INFO  org.flywaydb.core.internal.command.DbValidate-Successfully validated 3 migrations (execution time 00:00.046s)
+2026-02-07 20:47:53.897 [main] INFO  org.flywaydb.core.internal.command.DbMigrate-Current version of schema `fly_admin`: << Empty Schema >>
+2026-02-07 20:47:53.957 [main] INFO  org.flywaydb.core.internal.command.DbMigrate-Migrating schema `fly_admin` to version "1.0.0 - System Init"
+2026-02-07 20:47:54.091 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Can't create database 'fly_admin'; database exists (SQL State: HY000 - Error Code: 1007)
+2026-02-07 20:47:54.099 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_user_post' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.128 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_role_dept' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.134 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_login_log' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.140 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_oper_log' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.145 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_notice' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.151 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_config' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.189 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_user_org_role' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.195 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_role_menu' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.200 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_dict_data' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.205 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_dict_type' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.224 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.sys_org_tree' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:54.260 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Unknown table 'fly_admin.tool_s3_storage' (SQL State: 42S02 - Error Code: 1051)
+2026-02-07 20:47:55.183 [main] INFO  org.flywaydb.core.internal.command.DbMigrate-Migrating schema `fly_admin` to version "1.0.1 - Sys Quartz Job"
+2026-02-07 20:47:55.229 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.281 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.336 [main] INFO  org.flywaydb.core.internal.command.DbMigrate-Migrating schema `fly_admin` to version "1.0.2 - Quartz Init"
+2026-02-07 20:47:55.609 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.610 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.610 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.610 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.610 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.645 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.645 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.645 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.905 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.905 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.932 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.932 [main] WARN  o.f.c.internal.sqlscript.DefaultSqlScriptExecutor-DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-02-07 20:47:55.997 [main] INFO  org.flywaydb.core.internal.command.DbMigrate-Successfully applied 3 migrations to schema `fly_admin`, now at version v1.0.2 (execution time 00:01.922s)
+2026-02-07 20:47:56.062 [main] INFO  org.quartz.impl.StdSchedulerFactory-Using default implementation for ThreadExecutor
+2026-02-07 20:47:56.083 [main] INFO  org.quartz.core.SchedulerSignalerImpl-Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2026-02-07 20:47:56.083 [main] INFO  org.quartz.core.QuartzScheduler-Quartz Scheduler v.2.3.2 created.
+2026-02-07 20:47:56.084 [main] INFO  org.quartz.simpl.RAMJobStore-RAMJobStore initialized.
+2026-02-07 20:47:56.086 [main] INFO  org.quartz.core.QuartzScheduler-Scheduler meta-data: Quartz Scheduler (v2.3.2) 'FlyAdminScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2026-02-07 20:47:56.086 [main] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler 'FlyAdminScheduler' initialized from an externally provided properties instance.
+2026-02-07 20:47:56.086 [main] INFO  org.quartz.impl.StdSchedulerFactory-Quartz scheduler version: 2.3.2
+2026-02-07 20:47:56.086 [main] INFO  org.quartz.core.QuartzScheduler-JobFactory set to: com.fly.common.config.QuartzConfig$AutowiringSpringBeanJobFactory@2bb3f39e
+2026-02-07 20:47:56.520 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysRoleMenu ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 20:47:56.536 [main] WARN  c.b.mybatisplus.core.injector.DefaultSqlInjector-class com.fly.business.modules.system.model.entity.SysRoleDept ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2026-02-07 20:47:56.983 [main] INFO  org.redisson.Version-Redisson 3.17.1
+2026-02-07 20:47:57.950 [redisson-netty-2-11] INFO  o.r.connection.pool.MasterPubSubConnectionPool-1 connections initialized for localhost/127.0.0.1:6379
+2026-02-07 20:47:58.013 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool-24 connections initialized for localhost/127.0.0.1:6379
+2026-02-07 20:47:58.521 [main] INFO  o.s.security.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3fa57aa8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d4bdbd8, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fb30e5d, org.springframework.security.web.header.HeaderWriterFilter@18e76101, org.springframework.security.web.authentication.logout.LogoutFilter@531299d3, com.fly.common.security.JwtAuthenticationFilter@7f51f588, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c8dea0b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b9beefe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e847e71, org.springframework.security.web.session.SessionManagementFilter@131b58d4, org.springframework.security.web.access.ExceptionTranslationFilter@731d0d5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18ff753c]
+2026-02-07 20:47:59.895 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-07 20:47:59.979 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2026-02-07 20:48:00.001 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-07 20:48:00.004 [main] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Will start Quartz Scheduler [FlyAdminScheduler] in 2 seconds
+2026-02-07 20:48:00.025 [main] INFO  com.fly.business.AppRun-Started AppRun in 10.838 seconds (JVM running for 11.898)
+2026-02-07 20:48:00.334 [RMI TCP Connection(35)-198.18.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-07 20:48:00.334 [RMI TCP Connection(35)-198.18.0.1] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2026-02-07 20:48:00.338 [RMI TCP Connection(35)-198.18.0.1] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+2026-02-07 20:48:02.006 [Quartz Scheduler [FlyAdminScheduler]] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Starting Quartz Scheduler now, after delay of 2 seconds
+2026-02-07 20:48:02.006 [Quartz Scheduler [FlyAdminScheduler]] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED started.

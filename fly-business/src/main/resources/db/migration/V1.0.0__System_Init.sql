@@ -10,6 +10,7 @@ USE fly_admin;
 
 -- 删除已存在的表
 DROP TABLE IF EXISTS sys_user_post;
+DROP TABLE IF EXISTS sys_user_role;
 DROP TABLE IF EXISTS sys_role_dept;
 DROP TABLE IF EXISTS sys_login_log;
 DROP TABLE IF EXISTS sys_oper_log;
