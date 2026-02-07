@@ -1,0 +1,7 @@
+2026-02-06 16:34:56.418 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED paused.
+2026-02-06 16:34:56.563 [SpringApplicationShutdownHook] INFO  o.s.scheduling.quartz.SchedulerFactoryBean-Shutting down Quartz Scheduler
+2026-02-06 16:34:56.563 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED shutting down.
+2026-02-06 16:34:56.563 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED paused.
+2026-02-06 16:34:56.563 [SpringApplicationShutdownHook] INFO  org.quartz.core.QuartzScheduler-Scheduler FlyAdminScheduler_$_NON_CLUSTERED shutdown complete.
+2026-02-06 16:34:56.565 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closing ...
+2026-02-06 16:34:56.566 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource-{dataSource-1} closed

@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: fly-admin-monomer
+
+server:
+  port: 8080
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.fly.business.module..entity
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    root: info
+    com.fly: debug

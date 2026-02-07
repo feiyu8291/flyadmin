@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.18.110.34:3306/fly_admin?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root123
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+  quartz:
+    properties:
+      org:
+        quartz:
+          dataSource:
+            myDS:
+              driver: ${spring.datasource.driver-class-name}
+              URL: ${spring.datasource.url}
+              user: ${spring.datasource.username}
+              password: ${spring.datasource.password}
+  redis:
+    host: 172.18.110.34
+    port: 6379
+    password: 123456
+    database: 0
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+  security:
+    user:
+      name: dev-admin
+      password: <dev_encoded_password>
+      roles: DEV_ADMIN

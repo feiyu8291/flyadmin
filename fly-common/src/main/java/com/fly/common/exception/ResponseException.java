@@ -1,0 +1,41 @@
+package com.fly.common.exception;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+/**
+ * 自定义业务异常
+ */
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class ResponseException extends RuntimeException {
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 错误码
+     */
+    private Integer code;
+
+    /**
+     * 错误消息
+     */
+    private String message;
+
+    public ResponseException(String message) {
+        super(message);
+        this.code = 500;
+        this.message = message;
+    }
+
+    public ResponseException(Integer code, String message) {
+        super(message);
+        this.code = code;
+        this.message = message;
+    }
+
+    public ResponseException(Integer code, String message, Throwable cause) {
+        super(message, cause);
+        this.code = code;
+        this.message = message;
+    }
+}

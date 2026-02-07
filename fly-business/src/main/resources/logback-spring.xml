@@ -1,0 +1,43 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <!-- 从application.yml中获取日志文件名配置 -->
+    <springProperty scope="context" name="LOG_FILE_NAME" source="logging.file.name"/>
+
+    <!-- 控制台输出配置 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %red(%d{yyyy-MM-dd HH:mm:ss.SSS}) %green([%thread]) %highlight(%-5level) %cyan(%logger{50}) - %msg%n
+            </Pattern>
+        </encoder>
+    </appender>
+    <!-- 按日期滚动的文件输出配置 -->
+    <appender name="ROLLING_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_FILE_NAME}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_FILE_NAME}.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <maxHistory>30</maxHistory>
+            <totalSizeCap>500MB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50}-%msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <!-- 异步日志输出配置 -->
+    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+        <appender-ref ref="ROLLING_FILE"/>
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>256</queueSize>
+    </appender>
+
+    <!-- 定义日志记录的根级别和附加器 -->
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="ASYNC"/>
+    </root>
+
+    <!-- 为特定包设置日志级别 -->
+    <logger name="com.fly" level="debug"/>
+
+</configuration>
